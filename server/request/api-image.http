@@ -1,0 +1,4 @@
+@baseURL = http://192.168.100.6:4000/api/image
+
+### get image
+GET {{baseURL}}/62154c88d2b6f4a2048f03d0

@@ -1,0 +1,12 @@
+.race_step2 {
+  opacity: 0;
+  transform: translateX(100px);
+  animation: animation1 300ms ease 0ms 1 forwards;
+}
+
+@keyframes animation1 {
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

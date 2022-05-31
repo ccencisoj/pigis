@@ -1,0 +1,19 @@
+.actions_footer1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.wrap {
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+@media Only screen and (max-width: 640px) {
+  .actions_footer1 {
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}

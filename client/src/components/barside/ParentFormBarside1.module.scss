@@ -1,0 +1,35 @@
+.parent_form_barside1 {
+  width: var(--form-barside-width);
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  padding: 48px 32px;
+  align-items: center;
+  box-sizing: border-box;
+  flex-direction: column;
+  background-color: var(--primary-color);
+
+  .sentence {
+    width: 100%;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    
+    .bold {
+      font-weight: 600;
+    }
+
+    .bold_secundary {
+      font-weight: 600;
+      color: var(--secundary-color);
+    }
+  }
+
+  .figure1 {
+    bottom: 0px;
+    width: 600px;
+    position: absolute;
+  }
+}

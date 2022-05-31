@@ -1,0 +1,56 @@
+@baseURL=http://192.168.100.6:4000/api/parent
+@cookie=connect.sid=s%3AkdV2RKs64h4IDrCNbSLMT2Po1APAFbkN.yxcz5zu1kuvutqJYtzWDfKFhGoxUoI8kqdWtxxfJEsw; Path=/; HttpOnly
+
+### create parent
+POST {{baseURL}}/create
+Content-Type: application/json
+
+{
+  "name": "andres",
+  "email": "b2@gmail.com",
+  "password": "12345678"
+}
+
+### login parent
+POST {{baseURL}}/login
+Content-Type: application/json
+
+{
+  "email": "b2@gmail.com",
+  "password": "12345678"
+}
+
+### logout parent
+GET {{baseURL}}/logout
+
+### current parent
+GET {{baseURL}}/current
+Cookie: {{cookie}}
+
+### create child
+POST {{baseURL}}/createChild
+Cookie: {{cookie}} 
+Content-Type: multipart/form-data; boundary="m123"
+
+--m123
+Content-Type: text/plain
+Content-Disposition: form-data; name="name"
+
+cristian
+--m123
+Content-Type: image/jpeg
+Content-Disposition: form-data; name="image"; filename="image.jpg"
+
+< ../public/image/avatar.jpg
+--m123--
+
+### generate child code
+POST {{baseURL}}/generateChildCode
+Content-Type: application/json
+
+{
+  "childId": "62154ce7d9344ab8e7d8177b"
+}
+
+### get child list
+GET {{baseURL}}/childList

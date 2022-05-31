@@ -1,0 +1,18 @@
+.child_sign_in_form1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    width: 100%;
+
+    .title {
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+
+  .main {
+    width: 100%;
+  }
+}

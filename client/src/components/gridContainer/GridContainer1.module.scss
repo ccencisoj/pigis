@@ -1,0 +1,26 @@
+.grid_container1 {
+  column-gap: 32px;
+  row-gap: 24px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 16px));
+}
+
+@media Only screen and (max-width: 1240px) {
+  .grid_container1 {
+    row-gap: 12px;
+    grid-template-columns: repeat(1, calc(100% - 0px));
+  }
+}
+
+@media Only screen and (max-width: 1040px) {
+  .grid_container1 {
+    grid-template-columns: repeat(2, calc(50% - 16px));
+  }
+}
+
+@media Only screen and (max-width: 840px) {
+  .grid_container1 {
+    grid-template-columns: repeat(1, calc(100% - 0px));
+  }
+}

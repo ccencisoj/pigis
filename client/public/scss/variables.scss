@@ -1,0 +1,35 @@
+:root {
+  --body-background: #fff;
+
+  --primary-color: #090917;
+  --primary-color-hover: #090917;
+  --primary-color-active: #090917cc;
+  --primary-color-hover-outline: #09091711;
+  --primary-color-active-outline: #09091722;
+  
+  --secundary-color: #ff5555;
+  --secundary-color-hover: #ff5555cc;
+  --secundary-color-active: #ff5555;
+  --secundary-color-hover-outline: #ff555511;
+  --secundary-color-active-outline: #ff555522;
+  
+  --navigation-height: 72px;
+  --form-barside-width: 380px;
+  --form-input-height: 64px;
+  --parent-barside-width: 320px;
+  --preparing-race-progress-width: 500px;
+  --race-step-width: var(--preparing-race-progress-width);
+
+  --modal-timeout: 300ms;
+  --selectable-timeout: 300ms;
+  --barside-modal-timeout: 400ms;
+
+  --block-border-radius: 5px;
+  --block-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media Only screen and (max-width: 640px) {
+  :root { 
+    --preparing-race-progress-width: 90%;
+  }
+}

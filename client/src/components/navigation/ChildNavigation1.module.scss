@@ -1,0 +1,48 @@
+.child_navigation1 {
+  width: 100%;
+  display: flex;
+  z-index: 1000;
+  padding: 0px 2vw;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  height: var(--navigation-height);
+
+  .left {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .progress {
+    flex: 1;
+    display: none;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.sticky {
+  top: 0px;
+  left: 0px;
+  position: sticky;
+}
+
+.progress_bar {
+  .progress {
+    display: flex;
+  }
+
+  .right {
+    display: none;
+  }
+}

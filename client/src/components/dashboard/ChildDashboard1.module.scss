@@ -1,0 +1,158 @@
+.child_dashboard1 {
+  gap: 32px;
+  width: 100%;
+  display: flex;
+  padding-top: 5vh;
+  flex-direction: row;
+  box-sizing: border-box;
+  
+  .left {
+    top: calc(5vh + var(--navigation-height));
+    left: 0px;
+    gap: 24px;
+    width: 50%;
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+  
+    .container_welcome {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+  
+      .label {
+        font-size: 4em;
+        font-weight: 700;
+      }
+  
+      .value {
+        top: -24px;
+        font-size: 3em;
+        font-weight: 300;
+      }
+    }
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+
+      .label {
+        display: flex;
+        font-size: 1.3em;
+        font-weight: 700;
+        align-items: center;
+        flex-direction: row;
+
+        .tag {  
+          left: 4px;
+          color: #fff;
+          font-size: 14px;
+          padding: 4px 12px;
+          font-weight: 600;
+          border-radius: 32px;
+          box-sizing: border-box;
+          background-color: #ff5555;
+        } 
+      }
+  
+      .value {
+        top: -12px;
+        font-size: 4em;
+        font-weight: 700;
+      }
+    }
+  }
+  
+  .right {
+    gap: 48px;
+    width: 50%;
+    display: flex;
+    padding-bottom: 20vh;
+    flex-direction: column;
+  }
+}
+
+@media Only screen and (max-width: 1040px) {
+  .child_dashboard1 {
+    .left {
+      font-size: 90%;
+    }
+  }
+}
+
+@media Only screen and (max-width: 940px) {
+  .child_dashboard1 {
+    .left {
+      font-size: 80%;
+    }
+  }
+}
+
+@media Only screen and (max-width: 840px) {
+  .child_dashboard1 {
+    display: flex;
+    padding-top: 2vh;
+    flex-direction: column;
+
+    .left {
+      gap: 0px;
+      top: 2vh;
+      width: 100%;
+      row-gap: 12px;
+      flex-wrap: wrap;
+      font-size: 90%;
+      position: relative;
+      flex-direction: row;
+
+      .container_welcome {
+        width: 100%;
+        margin-bottom: 0px;
+      }
+
+      .container {
+        flex: 1;
+      }
+    }
+
+    .right {
+      width: 100%;
+    }
+  } 
+}
+
+@media Only screen and (max-width: 740px) {
+  .child_dashboard1 {
+    .left {
+      font-size: 75%;
+    }
+  }
+}
+
+@media Only screen and (max-width: 640px) {
+  .child_dashboard1 {
+    .left {
+      gap: 24px;
+      font-size: 100%;
+      flex-direction: column;
+    }
+  }
+}
+
+@media Only screen and (max-width: 480px) {
+  .child_dashboard1 {
+    padding-top: 0px;
+
+    .left {
+      gap: 12px;
+      font-size: 80%;
+    }
+  }
+}
+
+@media Only screen and (max-width: 400px) {
+  .child_dashboard1 {
+    .left {
+      font-size: 70%;
+    }
+  }
+}

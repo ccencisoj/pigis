@@ -1,0 +1,28 @@
+.footer_question1 {
+  width: 100%;
+  display: flex;
+  padding: 32px 0px;
+  flex-direction: row;
+  white-space: pre-wrap;
+  justify-content: center;
+
+  .question {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .action {
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--secundary-color);
+  }
+
+  .action:hover {
+    color: var(--secundary-color-hover);
+  }
+
+  .action:active {
+    color: var(--secundary-color-active);
+  }
+}

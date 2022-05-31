@@ -1,0 +1,23 @@
+.progress_thumb1 {
+  flex: 1;
+  height: 5px;
+  overflow: hidden;
+  border-radius: 32px;
+  background-color: #e5e5ee;
+  
+  .thumb {
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: inherit;
+    transition: 300ms ease;
+  }
+}
+
+.fill {
+  .thumb {
+    transform: scaleX(1);
+    background-color: var(--primary-color);
+  }
+}

@@ -1,0 +1,13 @@
+.countdown2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .counter {
+    color: #e5e5ee;
+    font-weight: 600;
+    font-size: 350px;
+    line-height: 350px;
+  }
+}

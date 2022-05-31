@@ -1,0 +1,15 @@
+.form_container1 {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.expand {
+  width: 100%;
+}
+
+@media Only screen and (max-width: 640px) {
+  .form_container1 {
+    width: 100%;
+  }
+}

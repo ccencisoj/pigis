@@ -1,0 +1,34 @@
+.parent_layout1 {
+  width: 100vw;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+
+  .column {
+    width: calc(100% - var(--parent-barside-width));
+    height: 100vh;
+    padding: 0px 4vw;
+    overflow-y: scroll;
+    box-sizing: border-box;
+
+    .secundary_navigation {
+      width: 100%;
+      padding-top: 24px;
+      padding-bottom: 32px;
+    }
+
+    .main {
+      width: 100%;
+    }
+  }
+}
+
+@media Only screen and (max-width: 1040px) {
+  .parent_layout1 {
+    flex-direction: column;
+
+    .column {
+      width: 100%;
+    }
+  }
+}

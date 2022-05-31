@@ -1,0 +1,33 @@
+.access_link_modal1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .main {
+    width: 100%;
+    display: flex;
+    padding-bottom: 24px;
+    flex-direction: column;
+
+    .link {
+      width: 100%;
+      display: block;
+      font-size: 18px;
+      font-weight: 500;
+      overflow: hidden;
+      border-radius: 5px;
+      white-space: nowrap;
+      padding: 20px 12px;
+      text-overflow: ellipsis;
+      box-sizing: border-box;
+      background-color: #fafaff;
+      border-left: 4px var(--primary-color) solid;
+    }
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}

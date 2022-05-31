@@ -1,0 +1,79 @@
+.parent_barside1 {
+  width: var(--parent-barside-width);
+  height: 100vh;
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  box-shadow: 4px 0px 12px rgba(0, 0, 0, 0.05);
+
+  .close {
+    top: 4px;
+    right: 4px;
+    z-index: 100;
+    position: absolute;
+  }
+  
+  .header {
+    width: 100%;
+    padding: 5vh 24px;
+    padding-bottom: 32px;
+    box-sizing: border-box;
+
+    .user {
+      gap: 12px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+
+      .image {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+      }
+
+      .column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        .name {
+          width: 100%;
+          font-size: 18px;
+          font-weight: 600;
+        }
+
+        .email {
+          width: 100%;
+          color: #999;
+          font-size: 14px;
+          overflow: hidden;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .main {
+    flex: 1;
+    gap: 12px;
+    width: 100%;
+    display: flex;
+    padding-top: 12px;
+    overflow-y: scroll;
+    flex-direction: column;
+  }
+
+  .main::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .footer {
+    left: 0px;
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+    padding: 12px 24px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+} 

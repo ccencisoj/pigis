@@ -1,0 +1,73 @@
+.counter_block1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .counter {
+      font-weight: 600;
+      font-size: 12em;
+    }
+
+    .objetive {
+      width: 100%;
+      display: flex;
+      padding: 24px 12px;
+      flex-direction: row;
+      box-sizing: border-box;
+      background-color: #fff;
+      justify-content: space-between;
+      box-shadow: var(--block-box-shadow);
+      border-radius: var(--block-border-radius);
+
+      .label {
+        font-size: 1.2em;
+        font-weight: 600;
+      }
+
+      .value {
+        font-size: 1.2em;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media Only screen and (max-width: 740px) {
+  .counter_block1 {
+    font-size: 90%;
+
+    .container {
+      width: 500px;
+    }
+  }
+}
+
+@media Only screen and (max-width: 640px) {
+  .counter_block1 {
+    font-size: 80%;
+
+    .container {
+      width: 450px;
+    }
+  }
+}
+
+@media Only screen and (max-width: 480px) {
+  .counter_block1 {
+    width: 100%;
+
+    .container {
+      width: 100%;
+
+      .counter {
+        font-size: 8em;
+      }
+    }
+  }
+}

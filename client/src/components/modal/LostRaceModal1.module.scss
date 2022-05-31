@@ -1,0 +1,30 @@
+.lost_race_modal1 {
+  width: 100%;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: animation1 300ms ease 0ms 1 forwards;
+
+  .figure1 {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e5e5ee;
+
+    .icon {
+      width: 150px;
+      height: 150px;
+      color: var(--primary-color);
+    }
+  }
+}
+
+@keyframes animation1 {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

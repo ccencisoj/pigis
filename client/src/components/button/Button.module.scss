@@ -1,0 +1,133 @@
+.button {
+  --color: #999;
+  --height: 56px;
+  gap: 8px;
+  height: var(--height);
+  display: flex;
+  padding: 0px 32px;
+  border-radius: 5px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+
+  .label {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color);
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    color: var(--color);
+  }
+}
+
+.button:hover {
+  color: #000;
+  background-color: #f5f5ff;
+}
+
+.button:active {
+  background-color: #e9e9ee;
+}
+
+.primary {
+  --color: #fff;
+  background-color: var(--primary-color);
+}
+
+.primary:hover {
+  background-color: var(--primary-color-hover);
+}
+
+.primary:active {
+  background-color: var(--primary-color-active);
+}
+
+.primary_outline {
+  --color: var(--primary-color);
+  background-color: transparent;
+  border: 2px var(--primary-color) solid;
+}
+
+.primary_outline:hover {
+  background-color: var(--primary-color-hover-outline);
+}
+
+.primary_outline:active {
+  background-color: var(--primary-color-active-outline);
+}
+
+.secundary {
+  --color: #fff;
+  background-color: var(--secundary-color);
+}
+
+.secundary:hover {
+  background-color: var(--secundary-color-hover);
+}
+
+.secundary:active {
+  background-color: var(--secundary-color-active);
+}
+
+.secundary_outline {
+  --color: var(--secundary-color);
+  background-color: transparent;
+  border: 2px var(--secundary-color) solid;
+}
+
+.secundary_outline:hover {
+  background-color: var(--secundary-color-hover-outline);
+}
+
+.secundary_outline:active {
+  background-color: var(--secundary-color-active-outline);
+}
+
+.only_icon {
+  width: var(--height);
+  height: var(--height);
+  padding: 0px;
+}
+
+.expand {
+  width: 100%;
+}
+
+.flex {
+  flex: 1;
+}
+
+.black_color {
+  --color: #000;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.small {
+  --height: 44px;
+
+  .label {
+    font-size: 14px;
+  }
+}
+
+@media Only screen and (max-width: 480px) {
+  .button {
+    padding: 0px 24px;
+
+    .label {
+      font-size: 14px;
+    }
+  }
+
+  .only_icon {
+    width: var(--height);
+    height: var(--height);
+    padding: 0px;
+  }
+}

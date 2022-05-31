@@ -1,0 +1,25 @@
+.container_header1 {
+  width: 100%;
+  display: flex;
+  padding: 12px 0px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}

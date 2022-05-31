@@ -1,0 +1,24 @@
+.parent_barside_modal1 {
+  transform: translateX(calc(-1 * var(--parent-barside-width)));
+  width: var(--parent-barside-width);
+  animation: animation1 var(--barside-modal-timeout) ease 0s 1 forwards;
+}
+
+@keyframes animation1 {
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.will_hidden_modal {
+  opacity: 1;
+  transform: translateX(0px);
+  animation: animation2 var(--barside-modal-timeout) ease 0s 1 forwards;
+}
+
+@keyframes animation2 {
+  to {
+    opacity: 0;
+    transform: translateX(calc(-1 * var(--parent-barside-width)));
+  }
+}

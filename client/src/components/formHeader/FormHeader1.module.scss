@@ -1,0 +1,35 @@
+.form_header1 {
+  width: 100%;
+  display: flex;
+  padding-bottom: 32px;
+  box-sizing: border-box;
+  flex-direction: column;
+
+  .title {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--secundary-color);
+  }
+
+  .sentence {
+    width: 100%;
+    font-size: 32px;
+    font-weight: 600;
+  }
+}
+
+@media Only screen and (max-width: 640px) {
+  .form_header1 {
+    padding-bottom: 24px;
+
+    .title {
+      font-size: 14px;
+    }
+
+    .sentence {
+      font-size: 24px;
+    }
+  }
+}

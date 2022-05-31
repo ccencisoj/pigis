@@ -1,0 +1,17 @@
+.camera_viewer1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .video {
+    max-width: 100%;
+  }
+}
+
+.hidden {
+  top: 0px;
+  left: 0px;
+  z-index: -10000;
+  position: fixed;
+  visibility: hidden;
+}

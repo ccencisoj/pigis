@@ -1,0 +1,20 @@
+.child_layout1 {
+  width: 100vw;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  .main {
+    width: 100%;
+    padding: 0px 10vw;
+    box-sizing: border-box;
+  }
+}
+
+@media Only screen and (max-width: 840px) {
+  .child_layout1 {
+    .main {
+      padding: 0px 5vw;
+    }
+  } 
+}

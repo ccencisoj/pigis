@@ -1,0 +1,32 @@
+.selectable1 {
+  width: 300px;
+  opacity: 0;
+  display: flex;
+  overflow: hidden;
+  border-radius: 5px;
+  flex-direction: column;
+  background-color: #fff;
+  transform: translateY(-20px);
+  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.08);
+  animation: animation1 var(--selectable-timeout) ease 0s 1 forwards;
+}
+
+@keyframes animation1 {
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.will_hidden_selectable {
+  opacity: 1;
+  transform: translateY(0px);
+  animation: animation2 var(--selectable-timeout) ease 0s 1 forwards;
+}
+
+@keyframes animation2 {
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}

@@ -1,0 +1,33 @@
+.tablet_field1 {
+  width: 250px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  box-sizing: border-box;
+  
+  .value {
+    padding: 8px 12px;
+    font-weight: 500;
+    border-radius: 5px;
+  }
+}
+
+.bold {
+  .value {
+    font-weight: 600;
+  }
+}
+
+.variant_success_state {
+  .value {
+    color: #0f0;
+    background-color: #0f05;
+  }
+}
+
+.variant_failled_state {
+  .value {
+    color: #f00;
+    background-color: #f005;
+  }
+}

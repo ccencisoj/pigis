@@ -1,0 +1,19 @@
+.tablet1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .main {
+    width: 100%;
+    overflow-x: scroll;
+    background-color: #fff;
+    box-shadow: var(--block-box-shadow);
+    border-radius: var(--block-border-radius);
+
+    .container {
+      min-width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

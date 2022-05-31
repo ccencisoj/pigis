@@ -1,0 +1,48 @@
+.selectable_item1 {
+  --color: #999;
+  gap: 8px;
+  width: 100%;
+  display: flex;
+  padding: 16px 12px;
+  align-items: center;
+  flex-direction: row;
+  box-sizing: border-box;
+
+  .label {
+    color: var(--color);
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    color: var(--color);
+  }
+}
+
+.selected {
+  --color: #000;
+}
+
+.selectable_item1:hover {
+  --color: #000;
+  background-color: #fafaff;
+}
+
+.selectable_item1:active {
+  background-color: #e9e9ee;
+}
+
+.variant_delete {
+  --color: #f00;
+}
+
+.variant_delete:hover {
+  --color: #f00;
+  background-color: #f001;
+}
+
+.variant_delete:active {
+  background-color: #f002;
+}

@@ -1,0 +1,41 @@
+.form_navigation1 {
+  width: 100%;
+  display: flex;
+  z-index: 1000;
+  padding: 0px 2vw;
+  flex-direction: row;
+  box-sizing: border-box;
+  background-color: #fff;
+  min-height: var(--navigation-height);
+
+  .left {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    .title {
+      font-size: 32px;
+      font-weight: 700;
+    }
+  }
+
+  .right {
+    flex: 1;
+    gap: 12px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+@media Only screen and (max-width: 640px) {
+  .form_navigation1 {
+    .right {
+      gap: 8px;
+    }
+  }
+}

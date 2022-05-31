@@ -1,0 +1,21 @@
+@baseURL = http://192.168.100.6:4000/api/race
+@cookie=
+
+### start race
+POST {{baseURL}}/start
+Content-Type: application/json
+
+{
+  "time": 600000
+}
+
+### end race
+POST {{baseURL}}/end
+Content-Type: application/json
+
+{
+  "winned": true
+}
+
+###current race
+GET {{baseURL}}/current

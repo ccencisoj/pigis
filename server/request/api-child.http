@@ -1,0 +1,21 @@
+@baseURL = http://192.168.100.6:4000/api/child
+@cookie=connect.sid=s%3A6QPWJ_iFT3i25xtz2TvZKCMwcFFj_qKO.HomAtQxhQRpqLlaRP24tgIr6LeNDBrC6MNnNK9uMALQ; Path=/; HttpOnly
+
+### login child
+POST {{baseURL}}/login
+Content-Type: application/json
+
+{
+  "code": "62157c21ed913c3c741d6479"
+}
+
+### logout child
+GET {{baseURL}}/logout
+Cookie: {{cookie}}
+
+### current child
+GET {{baseURL}}/current
+Cookie: {{cookie}}
+
+### race list
+GET {{baseURL}}/raceHistory

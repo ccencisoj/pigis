@@ -1,0 +1,39 @@
+.childs_navigation_item1 {
+  --color: #ccc;
+  height: 100%;
+  display: flex;
+  padding: 0px 24px;
+  align-items: center;
+
+  .label {
+    color: var(--color);
+    font-weight: 600;
+  }
+
+  .line {
+    left: 0px;
+    width: 100%;
+    bottom: 0px;
+    height: 4px;
+    display: none;
+    position: absolute;
+    background-color: var(--secundary-color);
+  }
+}
+
+.childs_navigation_item1:hover {
+  --color: #999;
+}
+
+.childs_navigation_item1:active {
+  --color: #000;
+  background-color: #f5f5ff;
+}
+
+.selected {
+  --color: #000;
+
+  .line {
+    display: block;
+  }
+}

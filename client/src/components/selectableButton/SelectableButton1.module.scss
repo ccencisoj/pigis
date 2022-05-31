@@ -1,0 +1,66 @@
+.selectable_button1 {
+  --color: #999;
+  gap: 4px;
+  height: 56px;
+  display: flex;
+  cursor: default;
+  padding: 0px 24px;
+  border-radius: 5px;
+  align-items: center;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: center;
+
+  .label {
+    color: var(--color);
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .icon {
+    top: 1px;
+    width: 24px;
+    height: 24px;
+    color: var(--color);
+  }
+
+  .selectable {
+    top: 100%;
+    right: 0px;
+    z-index: 10;
+    position: absolute;
+  }
+}
+
+.selectable_button1:hover {
+  background-color: #fafaff;
+}
+
+.selectable_button1:active {
+  background-color: #f5f5ff;
+}
+
+.show_selectable:hover {
+  background-color: transparent;
+}
+
+.show_selectable:active {
+  background-color: transparent;
+}
+
+.small {
+  .label {
+    font-size: 14px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.only_icon {
+  width: 48px;
+  height: 48px;
+  padding: 0px;
+}

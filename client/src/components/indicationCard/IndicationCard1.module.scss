@@ -1,0 +1,22 @@
+.indication_card1 {
+  width: 100%;
+  padding: 24px 24px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: var(--block-box-shadow);
+
+  .line {
+    top: 0px;
+    left: 0px;
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    background-color: var(--secundary-color);
+  }
+
+  .label {
+    width: 100%;
+    font-size: 1em;
+    font-weight: 500;
+  }
+}
